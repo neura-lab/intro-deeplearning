@@ -7,5 +7,3 @@ RUN pip install tflearn
 RUN pip install coconut-develop
 
 WORKDIR /notebooks
-
-CMD coconut-develop --jupyter notebook

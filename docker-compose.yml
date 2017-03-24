@@ -9,13 +9,9 @@ services:
     volumes:
       - ./notebooks:/notebooks
       - ./models:/models
-      - shared:/logs
-      - ../../cristian/phi:/phi
-      - ../../cristian/tensorbuilder:/tensorbuilder
-      - ../../cristian/tfinterface:/tfinterface
+      - shared:/logss
     ports:
       - "8888:8888"
-    command: bash -c "pip install -e /phi && pip install -e /tfinterface  &&  coconut-develop --jupyter notebook"
 
   tensorboard:
     build: ./docker
